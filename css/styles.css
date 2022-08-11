@@ -1,0 +1,238 @@
+:root {
+    --main-light-color: #F5F5F5;
+    --main-dark-color: #2F303A;
+    --secondary-color: #F5F4FA;
+
+    --main-font-color: #212121;
+    --secondary-font-color: #757575;
+    --accent-color: #2196F3;
+
+    --card-bgr-color: #FFFFFF;
+}
+
+/*Global styles*/
+body {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    color: var(--main-font-color);
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/*Header*/
+.header {
+    background-color: var(--card-bgr-color);
+    border-bottom: 1px solid #ECECEC;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1, 17;
+    color: var(--accent-color);
+}
+
+.accent {
+    color: #000;
+    ;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+
+.nav-link,
+.nav-link.current {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1, 14;
+    color: var(--main-font-color);
+}
+
+.nav-link.current {
+    color: var(--accent-color);
+}
+
+.nav-contacts:hover,
+.nav-contacts:focus {
+    color: var(--accent-color);
+}
+
+.nav-contacts.mail:hover,
+.nav-contacts.mail:focus {
+    color: var(--accent-color);
+}
+
+.nav-contacts,
+.nav-contacts.mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1, 14;
+    color: var(--secondary-font-color);
+}
+
+/*Title*/
+.fond {
+    background-color: var(--main-dark-color);
+}
+
+.main-slogan {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1, 36;
+    color: var(--card-bgr-color);
+}
+
+.title-button {
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1, 88;
+    color: var(--card-bgr-color);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Our proes*/
+.our-proes {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1, 14;
+    color: var(--main-font-color);
+}
+
+.about {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 71;
+    color: var(--secondary-font-color);
+}
+
+/*What we do + Our team*/
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1, 17;
+    color: var(--main-font-color);
+}
+
+.team-fond {
+    background-color: var(--secondary-color);
+}
+
+.box-list {
+    background-color: var(--card-bgr-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1, 19;
+    color: var(--main-font-color);
+}
+
+.profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1, 19;
+    color: var(--secondary-font-color);
+}
+
+/*Second page*/
+/*Title*/
+.title-color {
+    background-color: var(--main-light-color);
+}
+
+.button-name {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1, 63;
+    color: var(--main-font-color);
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-name:hover,
+.button-name:focus {
+    background-color: var(--accent-color);
+    color: var(--card-bgr-color);
+}
+
+.list-examples {
+    background-color: var(--card-bgr-color);
+    border: 1px solid #EEEEEE;
+}
+
+.example {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--main-font-color);
+}
+
+.type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1, 88;
+    color: var(--secondary-font-color);
+}
+
+/*Footer*/
+.footer {
+    background-color: var(--main-dark-color);
+}
+
+.accented {
+    color: var(--card-bgr-color);
+}
+
+.address {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 71;
+    color: var(--card-bgr-color);
+}
+
+.footer-contacts {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 71;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus {
+    color: var(--accent-color);
+}
