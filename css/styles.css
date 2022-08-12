@@ -1,20 +1,30 @@
 :root {
-    --main-light-color: #F5F5F5;
-    --main-dark-color: #2F303A;
-    --secondary-color: #F5F4FA;
+    --bgd-page-color:#F5F5F5;
+    --bgr-light-color: #FFFFFF;;
+    --bgd-dark-color: #2F303A;
+    --bgd-secondary-color: #F5F4FA;
+
+    --border-line:#ECECEC;
+    --second-border-line: #EEEEEE;
 
     --main-font-color: #212121;
     --secondary-font-color: #757575;
-    --accent-color: #2196F3;
+    --light-font-color: #fff;
+    --light-secondary-font-color: rgba(255, 255, 255, 0.6);
 
-    --card-bgr-color: #FFFFFF;
+    --accent-color:#2196F3;
+    --logo-color:#000000;
+  
 }
 
 /*Global styles*/
 body {
     font-family: 'Roboto', 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
     color: var(--main-font-color);
-}
+    }
 
 .link {
     text-decoration: none;
@@ -26,32 +36,36 @@ body {
 }
 
 .visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
+    position:absolute;
     white-space: nowrap;
     width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+    
 }
 
 /*Header*/
 .header {
-    background-color: var(--card-bgr-color);
-    border-bottom: 1px solid #ECECEC;
+    background-color: var(--bgr-light-color);
+    border-bottom: 1px solid var(--border-line);
 }
 
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1, 17;
+    line-height: 1.17;
     color: var(--accent-color);
 }
 
 .accent {
-    color: #000;
-    ;
+    color: var(--logo-color);
+    
 }
 
 .nav-link:hover,
@@ -62,8 +76,8 @@ body {
 .nav-link,
 .nav-link.current {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color: var(--main-font-color);
 }
 
@@ -84,30 +98,33 @@ body {
 .nav-contacts,
 .nav-contacts.mail {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color: var(--secondary-font-color);
 }
 
 /*Title*/
 .fond {
-    background-color: var(--main-dark-color);
+    background-color: var(--bgd-dark-color);
 }
 
 .main-slogan {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1, 36;
-    color: var(--card-bgr-color);
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--light-font-color);
 }
 
 .title-button {
     background-color: var(--accent-color);
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1, 88;
-    color: var(--card-bgr-color);
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--light-font-color);
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -115,18 +132,22 @@ body {
 }
 
 /*Our proes*/
+.section-color{
+    background-color: var(--bgd-page-color);
+}
 .our-proes {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1, 14;
+    font-size: inherit;
+    line-height: 1.14;
     color: var(--main-font-color);
 }
 
 .about {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1, 71;
+    font-size: inherit;
+    line-height: 1.71;
     color: var(--secondary-font-color);
 }
 
@@ -134,16 +155,16 @@ body {
 .section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1, 17;
+    line-height: 1.17;
     color: var(--main-font-color);
 }
 
 .team-fond {
-    background-color: var(--secondary-color);
+    background-color: var(--bgd-secondary-color);
 }
 
 .box-list {
-    background-color: var(--card-bgr-color);
+    background-color: var(--bgr-light-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -151,30 +172,30 @@ body {
 .name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1, 19;
+    line-height: 1.19;
     color: var(--main-font-color);
 }
 
 .profession {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1, 19;
+    line-height: 1.19;
     color: var(--secondary-font-color);
 }
 
 /*Second page*/
 /*Title*/
 .title-color {
-    background-color: var(--main-light-color);
+    background-color: var(--bgd-page-color);
 }
 
 .button-name {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1, 63;
+    line-height: 1.63;
     color: var(--main-font-color);
-    background-color: var(--secondary-color);
+    background-color: var(--bgd-secondary-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -183,53 +204,52 @@ body {
 .button-name:hover,
 .button-name:focus {
     background-color: var(--accent-color);
-    color: var(--card-bgr-color);
+    color: var(--light-font-color);
 }
 
 .list-examples {
-    background-color: var(--card-bgr-color);
-    border: 1px solid #EEEEEE;
+    background-color: var(--bgd-page-color);
+    border: 1px solid var(--second-border-line);
 }
 
 .example {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
     color: var(--main-font-color);
 }
 
 .type {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1, 88;
+    line-height: 1.88;
     color: var(--secondary-font-color);
 }
 
 /*Footer*/
 .footer {
-    background-color: var(--main-dark-color);
+    background-color: var(--bgd-dark-color);
 }
 
 .accented {
-    color: var(--card-bgr-color);
+    color: var(--light-font-color);
 }
 
 .address {
-    font-family: inherit;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1, 71;
-    color: var(--card-bgr-color);
+    line-height: 1.71;
+    color: var(--light-font-color);
 }
 
 .footer-contacts {
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1, 71;
-    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+    color: var(--light-secondary-font-color);
 }
 
 .footer-contacts:hover,
