@@ -1,6 +1,6 @@
 :root {
     --bgd-page-color:#F5F5F5;
-    --bgr-light-color: #FFFFFF;;
+    --bgd-light-color: #FFFFFF;;
     --bgd-dark-color: #2F303A;
     --bgd-secondary-color: #F5F4FA;
 
@@ -51,7 +51,7 @@ body {
 
 /*Header*/
 .header {
-    background-color: var(--bgr-light-color);
+    background-color: var(--bgd-light-color);
     border-bottom: 1px solid var(--border-line);
 }
 
@@ -164,7 +164,7 @@ body {
 }
 
 .box-list {
-    background-color: var(--bgr-light-color);
+    background-color: var(--bgd-light-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
