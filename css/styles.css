@@ -20,13 +20,13 @@
 /*Global styles*/
 body {
     font-family: 'Roboto', 'Raleway', sans-serif;
-    font-style: normal;
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--main-font-color);
     }
 
-.link {
+.link,
+.link-illustration {
     text-decoration: none;
     color: inherit;
 }
@@ -132,9 +132,7 @@ body {
 }
 
 /*Our proes*/
-.section-color{
-    background-color: var(--bgd-page-color);
-}
+
 .our-proes {
     text-transform: uppercase;
     font-weight: 700;
@@ -194,6 +192,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
+    letter-spacing: 0.03em;
     color: var(--main-font-color);
     background-color: var(--bgd-secondary-color);
     border: none;
@@ -208,7 +207,7 @@ body {
 }
 
 .list-examples {
-    background-color: var(--bgd-page-color);
+    background-color: var(--bgd-light-color);
     border: 1px solid var(--second-border-line);
 }
 
@@ -218,13 +217,15 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-font-color);
-}
+    }
+
 
 .type {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     color: var(--secondary-font-color);
+    
 }
 
 /*Footer*/
